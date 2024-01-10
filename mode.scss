@@ -1,0 +1,336 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    nav {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+
+        .nav-right {
+            width: 150px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                color: rgb(255, 0, 0);
+                font-size: 30px;
+            }
+        }
+
+        .nav-center {
+            width: 400px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                li {
+                    font-size: 15px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .nav-left {
+            width: 150px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            i {
+                font-size: 20px;
+                color: blue;
+            }
+        }
+    }
+
+    .seh-1 {
+        width: 100%;
+        height: 700px;
+        background: rgb(233,237,241);
+background: linear-gradient(90deg, rgba(233,237,241,1) 0%, rgba(236,230,237,1) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 150px;
+
+        .seh-1-right {
+            width: 500px;
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            h2 {
+                font-size: 70px;
+                color: rgb(24, 2, 58);
+            }
+
+            p {
+                font-size: 17px;
+                color: rgb(29, 28, 28);
+            }
+
+            button {
+                padding: 5px;
+                font-size: 30px;
+                color: white;
+                border: none;
+                background-color: gray;
+                margin-top: 30px;
+                outline: none;
+                position: relative;
+                cursor: pointer;
+                z-index: 1;
+              
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: red;
+                    z-index: -1;
+                    transform: scaleX(0);
+                    transition: transform .7s ease-in-out;
+                    transform-origin: left;
+                }
+                &:hover::before,
+                &:focus::before{
+                    transform: scaleX(1);
+                }
+            }
+
+        }
+
+        .seh-1-left  {
+            width: 300px;
+            height: 650px;
+            background-image: url(https://th.bing.com/th/id/OIP.epBLq_ugzS7xKNtjylVbXgHaPs?w=1000&h=2120&rs=1&pid=ImgDetMain);
+            background-size: 100% 100%;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+        }
+        
+    }
+     
+    .seh-2 {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .seh-2-top {
+            width: 916px;
+            height: 150px;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+       .seh-2-bottom {
+            
+        width: 1000px;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+
+        .seh-2-b-img {
+            width: 27%;
+            height: 600px;
+
+            .seh-2-b-img-top {
+                width: 100%;
+                height: 400px;
+                background-image: url(https://www.prestigetime.com/images/watches/SYM43.78.9.9R.53_main.jpg);
+                background-size: 100% 100%;
+
+            }
+
+            .seh-2-b-img-bottom {
+                width: 100%;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+                .seh2-b-p1 {
+                    font-size: 25px;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                }
+
+                .seh2-b-p2 {
+                    color: red;
+                    font-size: 20px;
+                }
+            }
+        }
+       }
+    }
+
+    .seh-3 {
+        width: 100%;
+        height: 1050px;
+        background-color: #777;
+
+        .seh-3-ic {
+            width: 100%;
+            height: 1300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            .seh-3-top {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                
+    
+                h2 {
+                    font-size: 50px;
+                }
+    
+                p {
+                    color: rgba(0, 0, 0, 0.679);
+                    font-size: 19px;
+                }
+            }
+    
+            .seh-3-bottom {
+                  
+                width: 100%;
+                height: 900px;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+
+    
+                .seh-3-bottom-img-div {
+
+                    width: 30%;
+                    height: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    background-color: chartreuse;
+                    align-content: center;
+                    
+
+                   .seh-3-b-top {
+                    width: 100%;
+                    height: 300px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                   }
+
+                   .img-info {
+
+                   }
+    
+                }
+            }
+    
+            .button {
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+    
+                button {
+                    padding: 5px;
+                    font-size: 30px;
+                    color: white;
+                    border: none;
+                    background-color: red;
+                    margin-top: 30px;
+                    outline: none;
+                    position: relative;
+                    cursor: pointer;
+                    z-index: 1;
+                  
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        background-color: rgb(47, 43, 43);
+                        z-index: -1;
+                        transform: scaleX(0);
+                        transition: transform .7s ease-in-out;
+                        transform-origin: left;
+                    }
+                    &:hover::before,
+                    &:focus::before{
+                        transform: scaleX(1);
+                    }
+    
+                
+    
+    
+    
+                }
+            }
+        }
+    }
+}
